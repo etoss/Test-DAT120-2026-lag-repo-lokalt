@@ -2,15 +2,11 @@ import turtle
 
 
 def tegn_firkant(storrelse):
-    turtle.forward(storrelse)         # 100 Piksler
-    turtle.right(90)            # Vinkel i grader
-    turtle.forward(storrelse)
-    turtle.right(90)            # Vinkel i grader
-    turtle.forward(storrelse)
-    turtle.right(90)            # Vinkel i grader
-    turtle.forward(storrelse)
+    for i in range(4):
+        turtle.forward(storrelse) 
+        turtle.right(90)            # Vinkel i grader
 
-
+        
 if __name__ == "__main__":
     turtle.pensize(3)
     tegn_firkant(100)
