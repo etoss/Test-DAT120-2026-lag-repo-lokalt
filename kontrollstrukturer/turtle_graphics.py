@@ -1,10 +1,14 @@
 import turtle
 
 
-turtle.pensize(3)
-for i in range(4):
-    turtle.forward(100)         # 100 Piksler
-    turtle.right(90)            # Vinkel i grader
+def tegn_firkant(storrelse):
+    for i in range(4):
+        turtle.forward(storrelse) 
+        turtle.right(90)            # Vinkel i grader
 
-turtle.circle(50)
-turtle.done()
+        
+if __name__ == "__main__":
+    turtle.pensize(3)
+    tegn_firkant(100)
+    turtle.circle(50)
+    turtle.done()
