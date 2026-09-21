@@ -1,15 +1,18 @@
 import turtle
 
 
-turtle.pensize(3)
-turtle.forward(100)         # 100 Piksler
-dummy = input("Er du klar?")
-turtle.right(90)            # Vinkel i grader
-turtle.forward(100)
-turtle.right(90)            # Vinkel i grader
-turtle.forward(100)
-turtle.right(90)            # Vinkel i grader
-turtle.forward(100)
+def tegn_firkant(storrelse):
+    turtle.forward(storrelse)         # 100 Piksler
+    turtle.right(90)            # Vinkel i grader
+    turtle.forward(storrelse)
+    turtle.right(90)            # Vinkel i grader
+    turtle.forward(storrelse)
+    turtle.right(90)            # Vinkel i grader
+    turtle.forward(storrelse)
 
-turtle.circle(50)
-turtle.done()
+
+if __name__ == "__main__":
+    turtle.pensize(3)
+    tegn_firkant(100)
+    turtle.circle(50)
+    turtle.done()
